@@ -35,10 +35,16 @@
 
 01.
 02. *Instrument:* Illumina MiSeq
+
     *Strategy:* WGS
+    
     *Source:* GENOMIC
+    
     *Selection:* unspecified
+    
     *Layout:* PAIRED
+ 03.
+
     
 
 ## Referencias
