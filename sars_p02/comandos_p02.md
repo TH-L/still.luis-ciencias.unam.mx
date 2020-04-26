@@ -31,5 +31,15 @@
 ## Parte IV.
 01. cd sars_p02 | mkdir bin
 
+## Parte V.
+
+01.
+02. *Instrument:* Illumina MiSeq
+    *Strategy:* WGS
+    *Source:* GENOMIC
+    *Selection:* unspecified
+    *Layout:* PAIRED
+    
+
 ## Referencias
 * https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications
