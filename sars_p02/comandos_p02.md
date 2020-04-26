@@ -28,6 +28,8 @@
 | Nanopore/Oxford Nanopore Technologies |	>5000	| 6×10^4 |	48/72 hrs |	<1	| 34 |	Real-time SMS |
 | Electron microscopy/ZS| 	7200 | 	|	14 h | 	<0.01 |   | Real-time SMS |
 
+## Parte IV.
+01. cd sars_p02 | mkdir bin
 
 ## Referencias
 * https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications
