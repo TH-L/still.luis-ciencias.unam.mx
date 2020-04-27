@@ -41,8 +41,11 @@
       gunzip -c ERR486827_1.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_1.fasta
       gunzip -c ERR486827_2.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_2.fasta
 
-02. * En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
- 
+02. 
+ * En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
+ * El siguiente código se usó para aislar las secuencias sin headers (awk '/^>ERR/{getline;print}' ERR486827_2.fasta  > ERR486827_2_aux.fasta) luego se aplicó ( awk '{print length($0)}' ERR486827_2_aux.fasta > length_2.txt) para obtener la longitud de cada secuencia y finalmente (awk '{ total += $1; count++ } END { print "Promedio: "  total/count}' length_2.txt >> length_2.txt) para obtener el promedio. 
+03. 
+
 ## Parte IV.
 01. cd sars_p02 | mkdir bin
 
