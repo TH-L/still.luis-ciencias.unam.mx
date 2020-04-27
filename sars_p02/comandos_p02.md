@@ -30,15 +30,15 @@
 
 ## Parte III.
 01. - En el artículo [@myco2017] en la sección "Availability of data and materials" podemos encontrar la liga a las secuencias del *Mycoplasma genitalium*. 
-- **Mover los archivos** 
-mv ERR486827_1.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
-mv ERR486827_2.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
-- **Ligas simbólicas**
-ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_2.fastq.gz 
-ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_1.fastq.gz 
-- **fastq a fasta**
-gunzip -c ERR486827_1.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_1.fasta
-gunzip -c ERR486827_2.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_2.fasta
+   - **Mover los archivos** 
+      mv ERR486827_1.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
+      mv ERR486827_2.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
+   - **Ligas simbólicas**
+      ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_2.fastq.gz 
+      ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_1.fastq.gz 
+   - **fastq a fasta**
+      gunzip -c ERR486827_1.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_1.fasta
+      gunzip -c ERR486827_2.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_2.fasta
 
 02. - En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
  
