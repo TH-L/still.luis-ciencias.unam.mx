@@ -29,14 +29,15 @@
 | Electron microscopy/ZS| 	7200 | 	|	14 h | 	<0.01 |   | Real-time SMS |
 
 ## Parte III.
-01. * En el artículo [@myco2017] en la sección "Availability of data and materials" podemos encontrar la liga a las secuencias del *Mycoplasma genitalium*. 
-   * **Mover los archivos** 
+01. 
+  * En el artículo [@myco2017] en la sección "Availability of data and materials" podemos encontrar la liga a las secuencias del *Mycoplasma genitalium*. 
+  * **Mover los archivos** 
       mv ERR486827_1.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
       mv ERR486827_2.fastq.gz ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data
-   * **Ligas simbólicas**
+  * **Ligas simbólicas**
       ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_2.fastq.gz 
       ln -s ~/still.luis-ciencias.unam.mx/sars_p02/data/raw_data/ERR486827_1.fastq.gz 
-   * **fastq a fasta**
+  * **fastq a fasta**
       gunzip -c ERR486827_1.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_1.fasta
       gunzip -c ERR486827_2.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_2.fasta
 
