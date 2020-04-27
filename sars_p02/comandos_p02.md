@@ -6,7 +6,8 @@
 
 ## Parte I.
 01. mkdir sars_p02
-02. touch comandos_p02.md
+02. cd sars_p02
+    nano comandos_p02.md
 
 ## Parte II.
 | Plataforma/compañía          | Longitud de lecturas (pb)  | # lecturas x corridas  | Tiempo   | Costo x 10^6 bases  | Error (%)   | Química                    |
@@ -41,26 +42,29 @@
       gunzip -c ERR486827_1.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_1.fasta
       gunzip -c ERR486827_2.fastq.gz | awk '/^@ERR/{gsub(/^@/,">",$1);print;getline;print}' > ERR486827_2.fasta
 
-02. 
- * En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
- * El siguiente código se usó para aislar las secuencias sin headers (awk '/^>ERR/{getline;print}' ERR486827_2.fasta  > ERR486827_2_aux.fasta) luego se aplicó ( awk '{print length($0)}' ERR486827_2_aux.fasta > length_2.txt) para obtener la longitud de cada secuencia y finalmente (awk '{ total += $1; count++ } END { print "Promedio: "  total/count}' length_2.txt >> length_2.txt) para obtener el promedio. 
-03. 
-
+02. * En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
+ 
 ## Parte IV.
 01. cd sars_p02 | mkdir bin
 
 ## Parte V.
 
-01.
-02. *Instrument:* Illumina MiSeq
+01. cd data/raw_data
+
+    wget 'https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-1/SRR253106/SRR253106.3'
+    
+    [Link a la base de datos SRA](https://www.ncbi.nlm.nih.gov/sra/?term=SRR253106.3)
+    
+02. *Instrument:*  454 GS 20 (Life Sciences)
 
     *Strategy:* WGS
     
     *Source:* GENOMIC
     
-    *Selection:* unspecified
+    *Selection:* RANDOM
     
-    *Layout:* PAIRED
+    *Layout:* SINGLE
+    
  03.
 
     
