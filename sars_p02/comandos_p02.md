@@ -60,6 +60,7 @@
 * region: 2
 * five_prime_UTR: 1
 
+less -S sequence.gff3 |cut -f3|uniq --count
 
 ## Parte IV.
 01. *Para crear un nuevo directorio llamado bin dentro de la carpeta sars_p02*
