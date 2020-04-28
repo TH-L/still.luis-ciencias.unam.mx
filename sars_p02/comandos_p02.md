@@ -44,7 +44,20 @@
 02. 
  * En el 1 tenemos 398824 (grep ERR -c ERR486827_1.fasta) y en el 2 tenemos 398824 (grep ERR -c ERR486827_2.fasta) por lo que sí tenemos la misma cantidad de secuencias.
  * El siguiente código se usó para aislar las secuencias sin headers (awk '/^>ERR/{getline;print}' ERR486827_2.fasta  > ERR486827_2_aux.fasta) luego se aplicó ( awk '{print length($0)}' ERR486827_2_aux.fasta > length_2.txt) para obtener la longitud de cada secuencia y finalmente (awk '{ total += $1; count++ } END { print "Promedio: "  total/count}' length_2.txt >> length_2.txt) para obtener el promedio. 
+
 03. 
+* Alineamiento:
+`AGCATGTTAGATTA   GATAGCTGTGCTA...`
+      `TTAGAT AAAGGATA CTG`
+* Alineamiento empezando en posición 6 (empezando de 0) y cadena de CIGAR 6M1D1M3I4M1D3M
+
+04.
+* three_prime_UTR: 1
+* stem_loop: 5
+* gene: 11
+* CDS: 13
+* region: 2
+* five_prime_UTR: 1
 
 ## Parte IV.
 01. cd sars_p02 | mkdir bin
