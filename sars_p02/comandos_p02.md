@@ -62,7 +62,10 @@
 
 
 ## Parte IV.
-01. cd sars_p02 | mkdir bin
+01. *Para crear un nuevo directorio llamado bin dentro de la carpeta sars_p02*
+cd sars_p02
+mkdir bin
+
 02. 
 03. 
 04. 
@@ -74,7 +77,9 @@ covertura = 206.2883
 
 ## Parte V.
 
-01. cd sars_p02
+01. *Para descargar los datos crudos de secuenciacion de DNA de Geobacter lovleyi ceppa SZ*
+
+    cd sars_p02
 
     wget 'https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-1/SRR253106/SRR253106.3'
     
@@ -82,7 +87,9 @@ covertura = 206.2883
     
     mv SRR253106.3 data/raw_data
     
-02. *Instrument:*  454 GS 20 (Life Sciences)
+02. *Información de la corrida*
+
+    *Instrument:*  454 GS 20 (Life Sciences)
 
     *Strategy:* WGS
     
