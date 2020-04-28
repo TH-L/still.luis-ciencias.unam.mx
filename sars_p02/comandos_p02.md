@@ -69,7 +69,26 @@ cd sars_p02
 mkdir bin
 
 02. 
-03. 
+03. EN ambas sequencias se observan comportamientos muy similares en las gráficas. 
+
+**Per base sequence quality**
+Podemos observar que los valores más alejados de la mediana van disminuyendo y en general de encuentran muy cercanos a la mediana, también se encuentran siempre en la región de muy buena calidad. 
+
+**Per sequence quality scores**
+Dado que no observamos picos durante la gráfica esto indica que tenemos una buena calidad.
+
+**Per Base Sequence Content**
+Tenemos que las bases se distribuyen correctamente y no hay una gran diferencia entre la presencia de ellas.
+
+**Per sequence GC content**
+Se ajusta bastante bien a los valores de una normal y tenelos una curva bastante sueve, por lo que no tenemos contaminadas las lecturas.
+
+**Per base N content**
+No tenemos precencia de N en nuestra lectura, es decir el secuecniador fue capaz de distinguir correctamente todas las bases. Por lo que en la gráfica no se observa ningún crecimiento.
+
+En las últimas gŕaficas no se observan comportamientos anormales por lo que 
+tenemos muy buena calidad de secuenciación, la longitud de nuestras secuecnias se encuentra alrededor de 150 y la cantidad de secuencias duplicadas es pequeña.
+
 04. 
 covertura = (cantidad de lecturas * longitud de lecturas) / total del tamaño del genoma (bp) 
 
@@ -153,7 +172,7 @@ No se detectaron adaptadores a lo largo de las lecturas
 
 ## Referencias
 * https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications
-
+* https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf
 * https://www.ncbi.nlm.nih.gov/nuccore/CP001089.1
 *
   - id: myco2017
