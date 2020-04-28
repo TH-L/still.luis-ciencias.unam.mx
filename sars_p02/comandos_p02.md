@@ -97,6 +97,28 @@
  [Reporte del análisis de calidad] (file:///C:/Users/Luis/Documents/Clases%20Genomica%20Computacional/genomica_2020-2/sars_p02/data/filtered/FASTQC/SRR253106.3_fastqc.html)
  
   05.
+**Per base sequence quality**
+Las medianas del phred score de calidad en promedio se mantienen por debajo de la excelente calidad a lo largo de toda la lectura
+**Per sequence quality scores**
+El pico de la distribución de las calidades por lectura es de 26
+**Per base sequence content**
+Los contenidos de nucleotido no se ven uniformes en las primeras posiciones del read (0-5) ni en las últimas (170-264)
+**Per sequence GC content**
+El contenido de CGs por lectura está ligeramente por encima de la distribución teórica
+**Per base N content**
+El contenido de Ns es casi nulo a lo largo de las lecturas, salvo por una pequeña distribución entre 155 y 174
+**Sequence Length Distribution**
+La distribución de la longitud de las lecturas tiene un pico en 105-109 pb
+**Sequence Duplication Levels**
+Los datos muestran bajos niveles de duplicación
+**Overrepresented sequences**
+No se detectaron secuencias sobre-representadas
+**Adapter Content**
+No se detectaron adaptadores a lo largo de las lecturas
+
+06.Phred +33
+
+07.Una estrategia podría ser eliminar las lecturas muy pequeñas y las lecturas muy grandes, que además de ser las que bajan la calidad de los datos no son tan abundantes por lo que es posible que la perdida de información del genoma sea despreciable. Se podría realizar el filtrado con FASTX quality trimmer.
 
     
 
