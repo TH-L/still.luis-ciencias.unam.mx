@@ -48,9 +48,8 @@
 
 03. 
 * Alineamiento:
-
-`AGCATGTTAGATTA   GATAGCTGTGCTA...`
-      `TTAGAT AAAGGATA CTG`
+AGCATGTTAGATTA   GATAGCTGTGCTA...
+      TTAGAT AAAGGATA CTG
 * Alineamiento empezando en posición 6 (empezando de 0) y cadena de CIGAR 6M1D1M3I4M1D3M
 
 04.
@@ -101,8 +100,7 @@
 * https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications
 
 * https://www.ncbi.nlm.nih.gov/nuccore/CP001089.1
----
-references:
+*
   - id: myco2017
     title: *Mycoplasma genitalium*: whole genome sequence analysis, recombination and population structure
     author:
@@ -126,4 +124,3 @@ references:
     issued:
       year: 2017
       month: 12
----
