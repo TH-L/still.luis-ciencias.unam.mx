@@ -49,11 +49,13 @@
 
 ## Parte V.
 
-01. cd data/raw_data
+01. cd sars_p02
 
     wget 'https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-1/SRR253106/SRR253106.3'
     
     [Link a la base de datos SRA](https://www.ncbi.nlm.nih.gov/sra/?term=SRR253106.3)
+    
+    mv SRR253106.3 data/raw_data
     
 02. *Instrument:*  454 GS 20 (Life Sciences)
 
@@ -65,12 +67,20 @@
     
     *Layout:* SINGLE
     
- 03.
+ 03. Teniedon que: 
+* El genoma de Geobacter lovleyi SZ mide **3917761** bp
+* En el archivo fastq hay **614406** lecturas single end
+* La longitud de las lecturas es de **107.35** pb en promedio
+ La cobertura del genoma = (# de lecturas * longitud de lecturas / tamaño del genoma) es de: 
+    **16.84
+ 04.
 
     
 
 ## Referencias
 * https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications
+
+* https://www.ncbi.nlm.nih.gov/nuccore/CP001089.1
 ---
 references:
   - id: myco2017
