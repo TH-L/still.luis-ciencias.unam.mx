@@ -48,6 +48,7 @@
 
 03. 
 * Alineamiento:
+
 `AGCATGTTAGATTA   GATAGCTGTGCTA...`
 
       `TTAGAT AAAGGATA CTG`
