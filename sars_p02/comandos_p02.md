@@ -91,8 +91,12 @@
 
  La cobertura del genoma = (# de lecturas * longitud de lecturas / tamaño del genoma) es de: 
  
-    **16.84
- 04.
+  **16.84**
+  
+ 04. Se tuvieron que generar los .html a través del ambiente gráfico de FASTQC, ya que no se logró ejecutar a través de línea de comandos 
+ [Reporte del análisis de calidad] (file:///C:/Users/Luis/Documents/Clases%20Genomica%20Computacional/genomica_2020-2/sars_p02/data/filtered/FASTQC/SRR253106.3_fastqc.html)
+ 
+  05.
 
     
 
