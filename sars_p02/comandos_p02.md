@@ -63,7 +63,9 @@
 
 ## Parte IV.
 01. *Para crear un nuevo directorio llamado bin dentro de la carpeta sars_p02*
+
 cd sars_p02
+
 mkdir bin
 
 02. 
