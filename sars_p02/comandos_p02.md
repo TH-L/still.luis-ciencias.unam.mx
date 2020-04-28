@@ -67,11 +67,13 @@
     
     *Layout:* SINGLE
     
- 03. Teniedon que: 
+ 03. Teniedo que: 
 * El genoma de Geobacter lovleyi SZ mide **3917761** bp
 * En el archivo fastq hay **614406** lecturas single end
 * La longitud de las lecturas es de **107.35** pb en promedio
+
  La cobertura del genoma = (# de lecturas * longitud de lecturas / tamaño del genoma) es de: 
+ 
     **16.84
  04.
 
