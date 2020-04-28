@@ -89,32 +89,42 @@
 * En el archivo fastq hay **614406** lecturas single end
 * La longitud de las lecturas es de **107.35** pb en promedio
 
- La cobertura del genoma = (# de lecturas * longitud de lecturas / tamaño del genoma) es de: 
+ La *cobertura del genoma* = (# de lecturas * longitud de lecturas / tamaño del genoma) es de: 
  
   **16.84**
   
  04. Se tuvieron que generar los .html a través del ambiente gráfico de FASTQC, ya que no se logró ejecutar a través de línea de comandos 
- [Reporte del análisis de calidad] (file:///C:/Users/Luis/Documents/Clases%20Genomica%20Computacional/genomica_2020-2/sars_p02/data/filtered/FASTQC/SRR253106.3_fastqc.html)
  
-  05.
+ 
+  05.*Reporte del análisis de calidad*
+  
 **Per base sequence quality**
 Las medianas del phred score de calidad en promedio se mantienen por debajo de la excelente calidad a lo largo de toda la lectura
+
 **Per sequence quality scores**
 El pico de la distribución de las calidades por lectura es de 26
+
 **Per base sequence content**
 Los contenidos de nucleotido no se ven uniformes en las primeras posiciones del read (0-5) ni en las últimas (170-264)
+
 **Per sequence GC content**
 El contenido de CGs por lectura está ligeramente por encima de la distribución teórica
+
 **Per base N content**
 El contenido de Ns es casi nulo a lo largo de las lecturas, salvo por una pequeña distribución entre 155 y 174
+
 **Sequence Length Distribution**
 La distribución de la longitud de las lecturas tiene un pico en 105-109 pb
+
 **Sequence Duplication Levels**
 Los datos muestran bajos niveles de duplicación
+
 **Overrepresented sequences**
 No se detectaron secuencias sobre-representadas
+
 **Adapter Content**
 No se detectaron adaptadores a lo largo de las lecturas
+
 
 06.Phred +33
 
