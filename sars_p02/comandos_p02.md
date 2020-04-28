@@ -65,8 +65,8 @@
 01. cd sars_p02 | mkdir bin
 02. 
 03. 
-04. covertura = (cantidad de lecturas * longitud de lecturas) / total del tamaño del genoma (bp)
-covertura = (398,824+398,824) * 150 / 580,000 bp 
+04. covertura = (cantidad de lecturas * longitud de lecturas) / total del tamaño del genoma (bp) \\
+covertura = (398,824+398,824) * 150 / 580,000 bp \\
 covertura = 206.2883 
 
 ## Parte V.
