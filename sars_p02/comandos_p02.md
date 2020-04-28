@@ -89,6 +89,8 @@ covertura = 206.2883
     
     mv SRR253106.3 data/raw_data
     
+    Se generó un archivo fastq con sra-toolkit 2.9.6-1-win64
+    
 02. *Información de la corrida*
 
     *Instrument:*  454 GS 20 (Life Sciences)
