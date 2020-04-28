@@ -48,10 +48,8 @@
 
 03. 
 * Alineamiento:
-
-AGCATGTTAGATTA   GATAGCTGTGCTA...
-
-      TTAGAT AAAGGATA CTG
+-AGCATGTTAGATTA   GATAGCTGTGCTA...
+-      TTAGAT AAAGGATA CTG
 * Alineamiento empezando en posición 6 (empezando de 0) y cadena de CIGAR 6M1D1M3I4M1D3M
 
 04.
