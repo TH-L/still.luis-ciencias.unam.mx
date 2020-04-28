@@ -63,13 +63,18 @@
 less -S sequence.gff3 |cut -f3|uniq --count
 
 ## Parte IV.
-01. *Para crear un nuevo directorio llamado bin dentro de la carpeta sars_p02*
+01. *Para crear un nuevo directorio llamado bin dentro de la carpeta sars_p02 y descargar FASTQC*
 
 cd sars_p02
 
 mkdir bin
 
-02. 
+wget "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip"
+
+gunzip -d fastqc_v0.11.9.zip
+
+02. Dado que no se consiguió abrir FastQC desde línea de comandos se utilizó el ambiente gráfico pra generar los archivos .html
+
 03. EN ambas sequencias se observan comportamientos muy similares en las gráficas. 
 
 **Per base sequence quality**
